@@ -1,0 +1,226 @@
+.readContainer .mainHeader {
+	background: #466ab8;
+	color: white;
+	min-height : 4.875em;
+	padding: 0.59375em 0.59375em;
+	padding-bottom: 0.75em;
+}
+
+.readContainer .mainHeader .title {
+	text-transform: uppercase;
+	padding-bottom: 0.125em;
+}
+
+
+.readContainer .mainHeader .fobField .label {
+	display: none;
+}
+.readContainer .mainHeader .fobField .content,
+.readContainer .mainHeader .info {
+	font-size: 0.8em;
+	display: block;
+}
+
+.readContainer .mainHeader  .field .label {
+	display: none;
+}
+
+.readContainer .detail>.x-inner>.title {
+	color: #4569b5;
+	text-align: center;
+	border-bottom: #466ab8 solid 1px;
+	text-transform: uppercase;
+	height: 2.625em;
+	line-height: 2.625em;
+}
+
+.readContainer .screen {
+}
+.readContainer .screen.hasPreviousScreen .title .leftArrow {
+	background: url(../images/layout/back.png) no-repeat left center;
+}
+.readContainer .screen.hasNextScreen .title .rightArrow {
+	background: url(../images/layout/next.png) no-repeat right center;
+}
+.readContainer .screen.hasPreviousScreen .title .leftArrow,
+.readContainer .screen.hasNextScreen .title .rightArrow {
+	background-size: 0.625em 1.0625em;
+}
+
+
+.readContainer .detail .detailContent {
+	padding-bottom: 2.375em;
+}
+
+.readContainer .detail .field {
+	border-top: #d7dbe6 solid 1px;
+	padding-top: 0.46875em;
+	padding-bottom: 0.6875em;
+}
+.readContainer .detail .field:FIRST-CHILD {
+	border-top: 0;
+}
+
+
+.readContainer .detail .label {
+}
+.readContainer .detail .label .content {
+	font-size: 0.722em;
+	text-transform: capitalize;
+}
+.readContainer .detail .value {
+	display: flex;
+	display: -webkit-flex;
+}
+.readContainer .detail .value > .decorator {
+	flex: 1;
+	-webkit-flex:1;
+}
+
+.readContainer .detail .value .content {
+	font-size: 0.722em;
+	font-weight: bold;
+}
+
+
+.readContainer .fobField .value .content,
+.readContainer .textField.PHONE .value .content,
+.readContainer .textField.MOBILE .value .content,
+.readContainer .textField.EMAIL .value .content,
+.readContainer .textField.URL .value .content,
+.readContainer .fileField .value .content,
+.readContainer .addressField .value .content {
+	/* color: #6ecbf7; */
+}
+
+.readContainer .fileField .value {
+	border-top: #f4f4f4 solid 0.056em;
+	border-bottom: #aaaaaa solid 0.056em;
+	padding-bottom: 0.666em;
+	padding-right: 1.566em;
+	margin: 0;
+	padding-top: 0.666em;
+}
+
+
+.readContainer .textField .value .subaction,
+.readContainer .fobField .value .subaction {
+	display: none;
+}
+.readContainer .textField.MOBILE .value .subaction {
+	display: block;
+	background: url(../images/read/subtask_sms.png) no-repeat center center;
+	text-indent: -999em;
+	width: 1.375em;
+	height: 1.21875em;
+	background-size: 1.375em 1.21875em;
+	margin-top: -0.53125em;
+}
+
+.readContainer .field.empty{
+	display: none;
+}
+.readContainer .listDataViewContainer.hasNoReadView .layout-ListDataView .x-dataview-item .buttonContainer {
+	background: none;
+}
+.readContainer .listDataViewContainer.hasNoReadView .layout-ListDataView .x-dataview-item.x-item-pressed {
+	background: none;
+}
+.readContainer .listDataViewContainer.hasNoEditView  .addToListButton {
+	display: none;
+}
+.readContainer .listDataViewContainer .addToListButton {
+	margin-left: auto;
+	margin-right: auto;
+}
+.readContainer .listDataViewContainer .layout-ListDataView .x-dataview-item .item {
+	padding: 0;
+	padding-top: 0.71875em;
+	padding-bottom: 0.75em;
+}
+.readContainer .listDataViewContainer .title {
+}
+.readContainer .listDataViewContainer .title .value {
+	color: black;
+	font-weight: bold;
+	font-size: 0.8em;
+	display: block;
+	padding: 0;
+}
+.readContainer .listDataViewContainer .info {
+}
+.readContainer .listDataViewContainer .info .value {
+}
+.readContainer .listDataViewContainer .info1 {
+}
+.readContainer .listDataViewContainer .info1 .value {
+	font-style: italic;
+}
+.readContainer .listDataViewContainer .info2 {
+	padding-top: 0.53125em;
+	
+}
+.readContainer .listDataViewContainer .info2 .value {
+}
+
+
+.shortcut {
+	height: 1.444em;
+	margin-top: 0.222em;
+}
+.readContainer.Person .shortcut {
+	margin-left: 2.389em;
+}
+
+.shortcut .noHeight {
+	position: absolute;
+}
+.shortcut a {
+	width: 2.222em;
+	height: 2.167em;
+	display: block;
+	text-indent: -999em;
+	float: left;
+	margin-right: 0.556em;
+}
+.shortcut .phone {
+	background: url(../images/read/shortcut_phone.png);
+}
+.shortcut .mobile {
+	background: url(../images/read/shortcut_mobile.png);
+}
+.shortcut .mail {
+	background: url(../images/read/shortcut_mail.png);
+}
+.shortcut .address {
+	background: url(../images/read/shortcut_address.png);
+}
+.shortcut .web {
+	background: url(../images/read/shortcut_web.png);
+}
+
+
+.readContainer .listDataViewContainer {
+	padding-top: 0.389em;
+}
+
+.readContainer .listDataViewContainer .x-dataview {
+	margin-top: 0.389em;
+	border-top: #aaaaaa solid 0.056em;
+}
+
+.readContainer .listDataViewContainer.hasNoEditView {
+	padding-top: 0;
+}
+
+.readContainer .listDataViewContainer.hasNoEditView .x-dataview {
+	padding-top: 0;
+	border-top: 0;
+}
+
+.readContainer .listDataViewContainer .x-dataview .x-dataview-item a {
+	color: #6ecbf7;
+}
+
+
+

@@ -1,0 +1,416 @@
+@font-face
+{
+font-family: OpenSans;
+src: url('../font/OpenSans-Regular.ttf'),
+	 url('../font/OpenSans-Bold.ttf'),
+	 url('../font/OpenSans-Italic.ttf'),
+	 url('../font/OpenSans-BoldItalic.ttf');
+}
+@font-face
+{
+font-family: OpenSansSemiBold;
+src: url('../font/OpenSans-Semibold.ttf'),
+	 url('../font/OpenSans-SemiboldItalic.ttf'),
+
+}
+
+* {
+	font-family: "OpenSans", sans-serif !important;
+}
+body.x-desktop {
+	font-size: 2em;
+}
+
+#edealMobileApp .x-layout-card-item {
+}
+
+
+.x-button,
+.x-button.x-button-pressing,
+.x-toolbar-dark .x-button,
+.x-toolbar-dark .x-button.x-button-pressing
+ {
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	border-radius: 0em;
+
+}
+.x-button-label {
+	font-weight: normal;
+}
+.x-form .x-scroll-container {
+	background: none;
+}
+.x-layout-card-item {
+	background: none;
+}
+
+.x-field.x-field-labeled.error .x-form-label  {
+	color: red;
+}
+
+
+.x-mask {
+	background: rgba(0, 0, 0, 0.6) center center no-repeat;
+}
+
+.x-msgbox.x-floating {
+	border-color: #000000;
+	background-color: #212326;
+}
+
+.x-msgbox-dark .x-msgbox-text {
+	color: #FFFFFF;
+}
+
+
+.x-msgbox.x-floating .x-button {
+	background-color: rgb(63,172,202);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.45, #287bbe),color-stop(0.54, #3facca),color-stop(0.84, #50c4e3),color-stop(0.98, #95daec));
+	background-image: -webkit-linear-gradient(bottom, #287bbe 45%, #3facca 54%, #50c4e3 84%, #95daec 98%);
+	background-image: linear-gradient(bottom, #287bbe 45%, #3facca 54%, #50c4e3 84%, #95daec 98%);
+	border: 0.055em solid #1266A7;
+	border-top-color: #1266A7;
+	color: white;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+	box-shadow: inset 0 0 0.15em #95DAEC;
+	text-shadow: 0em 0em 3px #333333;
+	-moz-box-shadow: 0em 2px 3px 0em #333333;
+	-webkit-box-shadow: 0em 2px 3px 0em #333333;
+	-o-box-shadow: 0em 2px 3px 0em #333333;
+	box-shadow: 0em 2px 3px 0em #333333;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=180, Strength=3);
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.x-msgbox.x-floating .x-button.x-button-pressing {
+	background-color: rgb(63,172,202);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.45, #287bbe),color-stop(0.54, rgb(63,172,202)),color-stop(0.94, #50c4e3),color-stop(0.98, #95daec));
+	background-image: -webkit-linear-gradient(bottom, #287bbe 45%, rgb(63,172,202) 54%, #50c4e3 94%, #95daec 98%);
+	background-image: linear-gradient(bottom, #287bbe 45%, rgb(63,172,202) 54%, #50c4e3 94%, #95daec 98%);
+  	box-shadow: inset 0 0 0.5em #FFFFFF;
+}
+
+.x-msgbox.x-floating .x-button-label {
+	font-weight: normal;
+	font-size: 1em;
+}
+.x-toolbar > * {
+	z-index: auto;
+}
+
+#headerToolBar {
+	height: 2.75em;
+	padding: 0;
+	background: white;
+}
+body.x-ios.x-phone #headerToolBar {
+	height: 3em;
+	padding-top:0.3em
+}
+#headerToolBar .x-button-back {
+	display: none;
+}
+
+#headerToolBar #backButton {
+	background: url('../images/layout/back.png') no-repeat center center;
+	background-size: 0.625em 1.0625em;
+	text-indent: -999em;
+	height: 2.75em;
+	width: 2.75em;
+	padding: 0;
+	margin: 0;
+}
+
+#headerToolBar #backButton.x-item-disabled {
+	background: none;
+}
+
+#headerToolBar .contextAction {
+	text-indent: -999em;
+	height: 2.75em;
+	width: 2.75em;
+	border-left: rgba(255, 255, 255, 0.2) 0.056em solid;
+	margin: 0;
+}
+
+#headerToolBar .editButton {
+	background: url('../images/read/edit.png') no-repeat center center;
+	background-size: 2.75em 2.75em;
+}
+
+#headerToolBar .createButton {
+	background: url('../images/search/create.png') no-repeat center center;
+	background-size: 2.75em 2.75em;
+}
+
+#headerToolBar .saveButton {
+	background: url('../images/edit/save.png') no-repeat center center;
+	background-size: 2.75em 2.75em;
+}
+
+#headerToolBar #titleComponent {  
+	background: url('../images/layout/logo.png') no-repeat center top;
+	text-transform: uppercase;
+	color: black;
+	background-size: 3.71875em 0.625em;
+	height: 100%;
+	margin: 0;
+	background-position: center 0.75em;
+}
+#headerToolBar #titleComponent .x-button-label {  
+	margin-top: 2em;
+	font-size: 0.6em;
+}
+
+#homeMenu {
+	width: 100%;
+	background: none;
+	padding: 0;
+	padding-top: 2.875em;
+}
+#homeMenu > .x-inner,
+#homeMenu > .x-body > .x-scroll-container > .x-inner {
+	width: 100%;
+	overflow: hidden;
+	background-color: #2f487e;
+	text-align: center;
+}
+
+#homeMenu .x-button {
+	margin-left: auto;
+	margin-right: auto;
+}
+#homeMenu .x-button.closeOnClickHeader {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 2.875em;
+}
+
+
+
+#homeMenu .x-button.enterprise,
+#homeMenu .x-button.person {
+	text-transform: uppercase;
+	color: white;
+	background-color: #466ab8;
+	width: 8.59375em;
+	height: 8.59375em;
+	border-radius: 0.6em;
+	margin-bottom: 1.5625em;
+	padding: 0 !important;
+}
+#homeMenu .x-button.enterprise .x-button-icon,
+#homeMenu .x-button.person .x-button-icon {
+	width: 3.78125em;
+	height: 3.40625em;
+	background-size: 3.78125em 3.40625em !important;
+	margin-top: 1.8125em;
+	margin-bottom: 0.77em;
+}
+#homeMenu .x-button.enterprise .x-button-label,
+#homeMenu .x-button.person .x-button-label {
+}
+
+#homeMenu .x-button.logout {
+	color: white;
+	font-size: 0.8em;
+	background: url('../images/layout/button_logout.png') no-repeat right 0.2734375em;
+	background-size: 1.40625em 1.40625em;
+	display: inline-block;
+	padding-right: 1.71875em;
+	padding-left: 0;
+	margin-top: 0.125em;
+	margin-bottom: 2.0625em;
+}
+
+#homeMenu .x-button.logout .x-button-icon {
+	
+}
+#homeMenu .x-button.logout .x-button-label {
+}
+
+
+#homeMenu .x-button.enterprise .x-button-icon {
+	background: url('../images/layout/button_enterprise.png') no-repeat center center;
+}
+#homeMenu .x-button.person .x-button-icon {
+	background: url('../images/layout/button_person.png') no-repeat center center;
+}
+#homeMenu .welcomeMessage {
+	color: white;
+	margin-top: 2.53125em;
+}
+
+
+.readContainer .x-carousel {
+	margin: 0 0.8125em;
+}
+.x-carousel-indicator-horizontal {
+	background: white;
+	height: 2.375em;
+	border-top: #466ab8 solid 1px;
+}
+
+.x-carousel-indicator-dark span.x-carousel-indicator-active {
+	
+}
+.x-carousel-indicator span.x-carousel-indicator-active {
+	background-color: #496ab7;
+}
+
+.x-carousel-indicator span {
+	background-color: #ecedf2;
+}
+
+
+
+.layout-ListDataView .x-scroll-container .x-dataview-inner {
+	padding: 0;
+}
+
+.layout-ListDataView .x-dataview-item {
+}
+.layout-ListDataView .x-dataview-item .buttonContainer {
+	background: url(../images/layout/next.png) no-repeat right 0.84375em center;
+	background-size: 0.625em 1.0625em;
+	
+}
+
+.x-dataview-item.x-item-pressed {
+	background-color: #8d9bb8;
+}
+
+.layout-ListDataView .x-dataview-item .item {
+	padding-top: 0.5625em;
+	border-bottom: #d7dbe6 solid 1px;
+	padding-left: 0.8125em;
+	padding-bottom: 0.5625em;
+	min-height: 5.34375em;
+}
+
+
+.layout-ListDataView .title {
+}
+.layout-ListDataView .title .value {
+	font-size: 1.1em;
+	color: #2f487e;
+}
+
+.layout-ListDataView .info {
+	padding-top: -0.15625em;
+}
+
+.layout-ListDataView .info1 {
+}
+.layout-ListDataView .info2 {
+}
+
+.layout-ListDataView .info .label,
+.layout-ListDataView .info .value {
+	font-size: 0.8em;
+}
+
+.x-msgbox .x-msgbox-inner a {
+	color: white;
+}
+
+#debugLayout {
+	background-color: #FFFFFF;
+	position: absolute;
+	z-index: 10000;
+}
+
+#debugLayout .closeButton {
+	background-color: #000000;
+	color: white;
+	text-decoration: underline;
+}
+
+#debugLayout .debugInfo .x-component-outer {
+	height: 100%;
+}
+
+#debugLayout .debugInfo .x-component-outer .x-field-input {
+	height: 100%;
+}
+
+#debugLayout .debugInfo .x-field-input textarea {
+	height: 100%;
+	font-size: 0.7em;
+}
+
+.x-msgbox {
+	max-width: none;
+}
+
+
+/*******************************
+ NEW ones
+*/
+
+
+.x-field,
+.x-form-fieldset .x-field {
+	border-bottom: 0;
+	background: none;
+	margin-bottom: 0.625em;
+	min-height: 0em;
+}
+.x-input-el {
+	background: none;
+	min-height: 1.8125em;
+	padding: 0.40625em 0.53125em;
+	padding-top: 0.2963em;
+	font-size: 0.85em;
+}
+.x-field .x-field-input {
+	border-radius: 0.28125em;
+	border: solid 1px #b4b4b4;
+	background: white;
+}
+
+.x-form-fieldset {
+	margin: 0;
+}
+.x-form-fieldset .x-form-fieldset-inner {
+	background: none;
+	border: none;	
+}
+
+
+.x-button.bigOne {
+	background-color: #a3bd35;
+	display: inline-block;
+	color: white;
+	border-radius: 0.46875em;
+	padding-left: 0.9875em;
+	padding-right: 0.9875em;
+	
+}
+
+.x-button.bigOne.red {
+	background-color: rgb(223, 46, 46);
+}
+.x-button.bigOne .x-button-label {
+	font-weight: bold;
+	line-height: 1.375em;
+	text-transform: uppercase;
+	white-space: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+

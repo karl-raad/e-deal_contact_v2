@@ -1,0 +1,9 @@
+/build/
+/phonegap/www
+/resources/sass/.sass-cache
+/cordova/www
+/bootstrap.js
+/bootstrap.json
+*.DS_Store*
+*.metada*
+RemoteSystemsTempFiles

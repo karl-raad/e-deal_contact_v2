@@ -1,0 +1,202 @@
+.editContainer {
+
+}
+.editContainer .detail>.x-inner>.title {
+	background: #466ab8;
+	color: white;
+	text-transform: uppercase;
+	padding: 0.59375em 0.90625em;
+	padding-bottom: 0.75em;	
+}
+
+.editContainer .screen.hasPreviousScreen .title .leftArrow {
+	margin-left: 0.167em;
+	background: url(../images/read/leftArrow.png) no-repeat left center;
+}
+.editContainer .screen.hasNextScreen .title .rightArrow {
+	margin-right: 0.167em;
+	background: url(../images/read/rightArrow.png) no-repeat right center;
+}
+
+
+
+.editContainer .detail #editForm {
+}
+.editContainer .detail #editForm > .x-scroll-view > .x-scroll-container > .x-inner {
+	padding: 0.6875em 0.90625em;
+}
+
+.editContainer .detail .field input {
+}
+
+.editContainer .detail .field.x-field-required {
+	position: relative;
+}
+.editContainer .detail .field.x-field-required > .x-component-outer:AFTER {
+    position: absolute;
+    top: 0em;
+    right: 0.375em;
+    text-align: center;
+    content: "*";
+    color: #B3B3B3;
+    font-size: 1.8015em;
+}
+
+.x-selectmark-base, .x-field-select .x-component-outer:after {
+}
+
+.x-selectmark-base, .x-field-select.x-field-required .x-component-outer:after {
+}
+
+.editContainer .detail .field.error input {
+  border-color: #d66562;
+}
+
+
+.editContainer .detail .field.focus input {
+}
+
+.editContainer .detail .field.first {
+}
+
+.editContainer .detail .label .content {
+}
+
+.editContainer .fieldset {
+}
+
+.editContainer .detail .value {
+}
+
+.editContainer .detail .value .content {
+}
+
+#fobSelectionPopup {
+	z-index:7;
+	margin: 1em;
+	background: white;
+}
+
+#fobSelectionPopup > .x-inner {
+}
+
+#fobSelectionPopup .content {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+#fobSelectionPopup .layout-ListDataView .x-dataview-item .buttonContainer {
+}
+#fobSelectionPopup .layout-ListDataView .info {
+}
+
+#fobSelectionPopup .layout-ListDataView .title {
+}
+
+#fobSelectionPopup .layout-ListDataView .x-dataview-item .item {
+}
+
+
+#fobSelectionPopup .content .header .x-field-text {
+}
+#fobSelectionPopup .content .header .close {
+	margin: 0;
+	padding: 0;
+	padding-left: 2em;
+}
+
+#fobSelectionPopup .content .header .close .x-button-icon.x-icon-mask {
+}
+
+.editContainer #editForm {
+}
+
+.editContainer .abstractEditField {
+}
+
+.editContainer .abstractEditField .label {
+	font-size: 0.85em;
+	padding-bottom: 0.0625em;
+}
+
+.editContainer .abstractEditField .field {
+}
+
+.editContainer .abstractEditField .field input {
+}
+
+.editContainer .abstractEditField .addItem {
+}
+
+.editContainer .abstractEditField .addItem .x-button-label {
+}
+
+.editContainer .abstractEditField .removeItem {
+	margin: 0;
+	padding: 0;
+	height: 1.90625em;
+	right: 0px;
+	width: 1.75em;
+}
+.editContainer .abstractEditField .removeItem .x-button-icon{
+}
+.editContainer .abstractEditField .removeItem .x-button-icon:BEFORE {
+	font-size: 1.4em;
+	color: #B3B3B3;
+}
+
+.editContainer .abstractEditField.selectField .x-field-select {
+}
+.editContainer .abstractEditField.selectField .x-field-select .x-component-outer::after {
+}
+
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-form-label {
+}
+
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-form-label span {
+}
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-component-outer {
+
+}
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-field-input .x-input-checkbox {
+}
+
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-input-el::after,
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-input-el:checked::after {
+}
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-input-el:checked::after {
+}
+.editContainer .abstractEditField.selectField .x-field-checkbox .x-input-el::after {
+}
+
+.editContainer .abstractEditField.fobField .field .x-button {
+	border-radius: 0.28125em;
+	border: solid 1px #b4b4b4;
+	background: white;
+	margin-bottom: 0.625em;
+}
+.editContainer .abstractEditField.fobField .field .x-button.open {
+	background: #466ab8;
+	color: white;
+	border: none;
+	margin-left: 0.21875em;
+	text-transform: uppercase;
+}
+
+.editContainer .abstractEditField.fobField .field.error .x-button {
+}
+
+.editContainer .abstractEditField.fobField .field .x-button-label {
+	text-align: left;
+	font-size: 0.85em;
+	white-space: normal;
+}
+
+.editContainer .abstractEditField.hiddenField {
+	display: none;
+}
+
+.editContainer .detail .field.x-field-required input {
+	
+}

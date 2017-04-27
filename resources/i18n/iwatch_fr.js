@@ -1,0 +1,10 @@
+{
+    "EVENTS":"Événements",
+    "TYPE":"TYPE",
+    "CREATOR":"CRÉATEUR",
+    "NOTES":"NOTES",
+    "CORRESPONDENTS":"CORRESPONDANTS",
+    "PLACE":"Place",
+    "CORRESPONDENT":"Correspondant",
+    "SYNC":"Sync"
+}

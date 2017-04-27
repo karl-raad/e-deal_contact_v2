@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "watch",
+      "filename" : "Screen Shot 2015-10-12 at 7.16.59 PM.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "watch",
+      "scale" : "2x",
+      "screen-width" : "<=145"
+    },
+    {
+      "idiom" : "watch",
+      "scale" : "2x",
+      "screen-width" : ">145"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

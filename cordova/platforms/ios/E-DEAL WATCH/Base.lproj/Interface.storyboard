@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VZW-df-GYW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--E-DEAL WATCH-->
+        <scene sceneID="e0Z-Ed-jeL">
+            <objects>
+                <controller identifier="MainInterfaceController" title="E-DEAL WATCH" id="VZW-df-GYW" customClass="MainInterfaceController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Please login" textAlignment="center" numberOfLines="0" id="aLh-FT-07v"/>
+                    </items>
+                    <menu key="menu" id="6aC-Ap-cXC">
+                        <items>
+                            <menuItem title="Sync" icon="repeat" id="C7A-iJ-UaE">
+                                <connections>
+                                    <action selector="syncAction" destination="VZW-df-GYW" id="XD5-Mg-B8P"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="loginLabel" destination="aLh-FT-07v" id="99I-rB-WCa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-12" y="125"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="N2h-XO-rCg">
+            <objects>
+                <controller identifier="Events" title="Events" id="87S-Em-akb" customClass="EventsController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <table alignment="left" id="2bz-ku-DEg">
+                            <items>
+                                <tableRow identifier="EventsTRC" id="jOT-Rk-nTX" customClass="EventsTableRowController" customModule="E_DEAL__WATCH_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="NpO-3C-iec">
+                                        <items>
+                                            <group width="1" widthAdjustment="-4" alignment="right" id="OSE-2d-Hba">
+                                                <items>
+                                                    <label width="1" alignment="left" text="Date" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="Ubd-wD-dkf">
+                                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" widthAdjustment="13" alignment="left" radius="6" id="6Xc-0D-ZWY">
+                                                <items>
+                                                    <group width="11.5" height="1" heightAdjustment="-5" alignment="left" verticalAlignment="center" spacing="0.0" id="Je2-uh-5le">
+                                                        <items>
+                                                            <separator alignment="center" hidden="YES" id="9dJ-ax-7jC">
+                                                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </separator>
+                                                        </items>
+                                                    </group>
+                                                    <group alignment="left" verticalAlignment="center" layout="vertical" spacing="0.0" id="Ry4-WL-QBf">
+                                                        <items>
+                                                            <label alignment="left" text="Subject" textAlignment="left" numberOfLines="0" id="RGb-0J-Jvs">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                                            </label>
+                                                            <label alignment="left" text="Place" numberOfLines="0" id="2dq-j6-h4P">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                            </label>
+                                                            <label alignment="left" text="Time" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="iwR-mf-xIm">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="3" top="3" bottom="3"/>
+                                            </group>
+                                            <group width="1" height="16" alignment="left" id="4mU-0I-ckA"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="Ubd-wD-dkf" id="HT5-M7-4C8"/>
+                                        <outlet property="placeLabel" destination="2dq-j6-h4P" id="RS8-GL-YG2"/>
+                                        <outlet property="spacingGroup" destination="4mU-0I-ckA" id="zh7-i0-kPK"/>
+                                        <outlet property="subjectLabel" destination="RGb-0J-Jvs" id="X3t-k9-Vtj"/>
+                                        <outlet property="timeLabel" destination="iwR-mf-xIm" id="ms9-Wl-VJY"/>
+                                        <outlet property="typeSeparator" destination="9dJ-ax-7jC" id="xH4-de-BVr"/>
+                                        <segue destination="YBU-oD-k1U" kind="modal" identifier="toEvent" id="Dcj-wC-J7b"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label height="20" alignment="center" verticalAlignment="center" text="No events" textAlignment="center" id="AJS-rT-YZ3"/>
+                    </items>
+                    <menu key="menu" id="kfB-52-SrY">
+                        <items>
+                            <menuItem title="Sync" icon="repeat" id="ag3-NZ-GJ3">
+                                <connections>
+                                    <action selector="syncAction" destination="87S-Em-akb" id="B8D-dE-Tc9"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="eventsTable" destination="2bz-ku-DEg" id="GpL-Cd-EHJ"/>
+                        <outlet property="noEventsLabel" destination="AJS-rT-YZ3" id="5av-Gi-ta9"/>
+                        <segue destination="wqG-1f-Urw" kind="relationship" relationship="nextPage" id="VFg-dc-Osh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="155" y="125"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="8bJ-ME-xSb">
+            <objects>
+                <glanceController topTemplateType="body1Large" id="Hzg-In-7Nq" customClass="GlanceController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <label alignment="left" text="Monday" id="xN4-WH-6ke">
+                            <color key="textColor" red="0.12941176470588237" green="0.68235294117647061" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="left" text="1" id="dwS-Fy-UyV"/>
+                        <group alignment="left" layout="vertical" id="fUM-NB-ilY">
+                            <items>
+                                <group width="1" alignment="left" id="1eC-yv-Bdl">
+                                    <items>
+                                        <label width="1" alignment="left" text="12pm" id="BBF-KR-9wj"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.12941176470588237" green="0.68235294117647061" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <table alignment="left" id="iKV-Q5-oDY">
+                                    <items>
+                                        <tableRow identifier="GlanceTRC" id="B0W-cN-4kT" customClass="GlanceTableRowController" customModule="E_DEAL__WATCH_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" spacing="0.0" id="xjx-12-eGa">
+                                                <items>
+                                                    <group width="11.5" height="1" heightAdjustment="-5" alignment="left" verticalAlignment="center" spacing="0.0" id="AJE-JI-gnk">
+                                                        <items>
+                                                            <separator alignment="center" hidden="YES" id="829-jR-n4u">
+                                                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </separator>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" widthAdjustment="-11.5" alignment="left" layout="vertical" spacing="0.0" id="YIz-mi-DR3">
+                                                        <items>
+                                                            <label width="1" alignment="left" verticalAlignment="center" text="Subject" numberOfLines="0" id="9di-T6-Hdq">
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="16"/>
+                                                            </label>
+                                                            <label width="1" alignment="left" verticalAlignment="center" text="Place" numberOfLines="0" id="bbW-dA-kIq">
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="placeLabel" destination="bbW-dA-kIq" id="lz5-VK-feO"/>
+                                                <outlet property="rowGroup" destination="xjx-12-eGa" id="OtS-dC-7bb"/>
+                                                <outlet property="subjectLabel" destination="9di-T6-Hdq" id="ZNf-cI-jcJ"/>
+                                                <outlet property="typeSeparator" destination="829-jR-n4u" id="yKp-Cm-pZX"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="eventsTable" destination="iKV-Q5-oDY" id="q0v-17-Ez6"/>
+                        <outlet property="monthDayLabel" destination="dwS-Fy-UyV" id="wO1-3G-263"/>
+                        <outlet property="timeLabel" destination="BBF-KR-9wj" id="9pg-Bg-sbZ"/>
+                        <outlet property="weekDayLabel" destination="xN4-WH-6ke" id="boj-3u-XpP"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="-182" y="413"/>
+        </scene>
+        <!--E-DEAL WATCH-->
+        <scene sceneID="dbm-fQ-9sz">
+            <objects>
+                <controller identifier="Loading" title="E-DEAL WATCH" id="hLB-VJ-THL" customClass="LoadingController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <group width="1" height="0.59999999999999998" alignment="left" layout="vertical" id="2mq-a6-mUb">
+                            <items>
+                                <imageView alignment="center" verticalAlignment="center" image="spinner" animationDuration="1" id="07W-hp-wW6"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-12" y="413"/>
+        </scene>
+        <!--KPI-->
+        <scene sceneID="eBP-W3-u5T">
+            <objects>
+                <controller identifier="KPI" title="KPI" id="wqG-1f-Urw" customClass="KPIController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="nXR-7J-Gat">
+                            <items>
+                                <label alignment="left" text="Ventes Mensuelles" numberOfLines="0" id="2zq-Fg-o87">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="19"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" spacing="4" id="Ff5-AM-9YL">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="$ 4.4M" textAlignment="center" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="E3h-aS-eSM">
+                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                                </label>
+                                <imageView width="25" height="25" alignment="center" verticalAlignment="center" image="green" id="Gdu-TW-h6L"/>
+                            </items>
+                        </group>
+                        <imageView alignment="center" image="histogram" id="3Te-rF-8O1"/>
+                        <label alignment="left" text="Evolution des ventes par mois" numberOfLines="0" id="OQs-ip-9qJ"/>
+                        <table alignment="left" id="Z3j-uf-rH5">
+                            <items>
+                                <tableRow identifier="KPITRC" id="33Y-MN-VDa" customClass="KPITableRowController" customModule="E_DEAL__WATCH_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="8KU-dj-Uvz">
+                                        <items>
+                                            <group width="1" alignment="left" id="M1V-fI-hk8">
+                                                <items>
+                                                    <label width="0.5" alignment="left" text="jul" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="74o-VH-AaE"/>
+                                                    <label width="0.5" alignment="right" text="$ 2.0M" textAlignment="right" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="L5f-n2-HdM"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="74o-VH-AaE" id="j8h-iI-0fm"/>
+                                        <outlet property="kpiLabel" destination="L5f-n2-HdM" id="VrF-NP-1fd"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="JZG-5W-gga">
+                        <items>
+                            <menuItem title="Sync" icon="repeat" id="RD4-bN-sUK">
+                                <connections>
+                                    <action selector="syncAction" destination="wqG-1f-Urw" id="X6b-hA-sCD"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="KPITable" destination="Z3j-uf-rH5" id="0cS-Pj-NcH"/>
+                        <outlet property="KPIValueLabel" destination="E3h-aS-eSM" id="XIv-iI-xdQ"/>
+                        <outlet property="arrowImage" destination="Gdu-TW-h6L" id="FJX-6K-aug"/>
+                        <outlet property="descriptionLabel" destination="OQs-ip-9qJ" id="1B8-cx-NBZ"/>
+                        <outlet property="graphImage" destination="3Te-rF-8O1" id="Vhf-iK-BJj"/>
+                        <outlet property="titleLabel" destination="2zq-Fg-o87" id="R0e-Z3-hR3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="155" y="468.75"/>
+        </scene>
+        <!--eventController-->
+        <scene sceneID="USn-5O-nXi">
+            <objects>
+                <controller identifier="eventController" spacing="15" id="YBU-oD-k1U" customClass="EventController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="Twl-eH-hYs">
+                            <items>
+                                <label alignment="left" text="Subject" numberOfLines="0" id="Xbg-8o-cxT">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="19"/>
+                                </label>
+                                <group width="1" alignment="left" id="SxO-vk-b6b">
+                                    <items>
+                                        <button alignment="left" id="HPd-vf-b3f">
+                                            <group key="contentGroup" width="1" alignment="left" id="IAK-px-qnw">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Place" numberOfLines="0" id="LVE-BK-PF8">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                    <imageView width="25" height="25" alignment="right" verticalAlignment="center" image="map" id="U58-8X-S4Q"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <segue destination="UdT-CI-cTH" kind="modal" identifier="toPlace" id="pmR-6U-gsM"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Time" id="2If-23-jyy"/>
+                        <group width="1" alignment="left" layout="vertical" id="ALq-HR-jl4">
+                            <items>
+                                <group width="1" alignment="left" id="tIv-ag-QJc">
+                                    <items>
+                                        <label alignment="left" text="TYPE" id="nEF-5d-Ag0">
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" radius="6" id="B6R-5N-ofX">
+                                    <items>
+                                        <group width="0.11" height="1" alignment="left" verticalAlignment="center" id="IQi-p1-Plp">
+                                            <items>
+                                                <separator alignment="center" hidden="YES" id="69F-6f-NzJ">
+                                                    <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                            </items>
+                                        </group>
+                                        <group alignment="left" verticalAlignment="center" layout="vertical" id="fHe-2r-sTD">
+                                            <items>
+                                                <group alignment="left" verticalAlignment="center" layout="vertical" id="5g4-xG-F4Q">
+                                                    <items>
+                                                        <label alignment="center" verticalAlignment="center" text="Type" numberOfLines="0" id="xHR-lt-zkV">
+                                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                        </label>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                    <edgeInsets key="margins" left="0.0" right="5" top="10" bottom="10"/>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="kSB-5s-9BL">
+                            <items>
+                                <group width="1" alignment="left" id="Wqq-rH-VE7">
+                                    <items>
+                                        <label alignment="left" text="CREATOR" id="rnq-Z3-ONl">
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" radius="6" id="Smj-Di-Rer">
+                                    <items>
+                                        <button alignment="center" id="3Zv-gE-iGv">
+                                            <group key="contentGroup" width="1" alignment="left" id="igE-zE-Nl5">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Creator" textAlignment="left" numberOfLines="0" id="Nlg-aF-d6Q">
+                                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="5" right="5" top="10" bottom="10"/>
+                                            </group>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="9j1-9c-8pr">
+                            <items>
+                                <group width="1" alignment="left" id="RxF-ga-JS4">
+                                    <items>
+                                        <label alignment="left" text="NOTES" id="18l-QV-sdv">
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" radius="6" id="tUL-Rh-pC3">
+                                    <items>
+                                        <group width="1" alignment="left" id="jRS-jI-IoX">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="Notes " numberOfLines="0" id="4MQ-2n-GGb">
+                                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                </label>
+                                            </items>
+                                            <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                            <edgeInsets key="margins" left="5" right="5" top="10" bottom="10"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="rxO-qa-WOp">
+                            <items>
+                                <group width="1" alignment="left" id="xpI-Sk-phU">
+                                    <items>
+                                        <label alignment="left" text="CORRESPONDENTS" id="W63-xM-glj">
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" radius="6" id="tzK-5x-FCx">
+                                    <items>
+                                        <group width="1" alignment="center" id="VtU-iY-Jll">
+                                            <items>
+                                                <table alignment="left" spacing="1" id="LsO-E3-m3U">
+                                                    <items>
+                                                        <tableRow identifier="CorrespondentsTRC" id="cbF-ai-yTs" customClass="CorrespondentsTableRowController" customModule="E_DEAL__WATCH_Extension">
+                                                            <group key="rootItem" width="1" height="0.0" alignment="left" id="TEp-RO-HeI">
+                                                                <items>
+                                                                    <label alignment="left" verticalAlignment="center" text="Correspondents" numberOfLines="0" id="HJ6-bc-BDl"/>
+                                                                </items>
+                                                                <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <edgeInsets key="margins" left="5" right="5" top="10" bottom="10"/>
+                                                                <connections>
+                                                                    <segue destination="LaK-Cg-gdC" kind="modal" identifier="toCorrespondent" id="jOg-3h-o8d"/>
+                                                                </connections>
+                                                            </group>
+                                                            <connections>
+                                                                <outlet property="correspondentsLabel" destination="HJ6-bc-BDl" id="uk9-Hx-Rvv"/>
+                                                            </connections>
+                                                        </tableRow>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </table>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" white="0.1524465461" alpha="1" colorSpace="calibratedWhite"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="correspondentsGroup" destination="rxO-qa-WOp" id="quu-iz-tmw"/>
+                        <outlet property="correspondentsMetaLabel" destination="W63-xM-glj" id="9DA-KK-QjO"/>
+                        <outlet property="correspondentsTable" destination="LsO-E3-m3U" id="Srz-zE-lbi"/>
+                        <outlet property="creatorLabel" destination="Nlg-aF-d6Q" id="Yhl-w9-15Z"/>
+                        <outlet property="creatorMetaLabel" destination="rnq-Z3-ONl" id="Cjs-CR-hbV"/>
+                        <outlet property="notesGroup" destination="9j1-9c-8pr" id="wdh-ig-2rU"/>
+                        <outlet property="notesLabel" destination="4MQ-2n-GGb" id="dpY-cq-bYJ"/>
+                        <outlet property="notesMetaLabel" destination="18l-QV-sdv" id="33h-yN-Ah1"/>
+                        <outlet property="placeGroup" destination="SxO-vk-b6b" id="ADw-uD-0i3"/>
+                        <outlet property="placeLabel" destination="LVE-BK-PF8" id="QJf-2W-JFc"/>
+                        <outlet property="subjectLabel" destination="Xbg-8o-cxT" id="lJi-Rx-gis"/>
+                        <outlet property="timeLabel" destination="2If-23-jyy" id="b0q-wQ-29G"/>
+                        <outlet property="typeLabel" destination="xHR-lt-zkV" id="UFz-K0-FbO"/>
+                        <outlet property="typeMetaLabel" destination="nEF-5d-Ag0" id="oXA-Mk-a9f"/>
+                        <outlet property="typeSeparator" destination="69F-6f-NzJ" id="J9P-rw-etU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="406" y="240"/>
+        </scene>
+        <!--< Correspondent-->
+        <scene sceneID="EoX-CY-yGT">
+            <objects>
+                <controller title="&lt; Correspondent" spacing="3" id="LaK-Cg-gdC" customClass="CorrespondentController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="RcB-Vw-6nt">
+                            <items>
+                                <label alignment="left" text="Correspondent" numberOfLines="0" id="0Tm-oe-zMR">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="19"/>
+                                </label>
+                                <label alignment="left" text="Enterprise" numberOfLines="0" id="NSD-67-XEM">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
+                                <separator width="1" alignment="left" alpha="0.0" id="p1V-wH-AjB"/>
+                            </items>
+                        </group>
+                        <group alignment="left" verticalAlignment="center" layout="vertical" id="NU0-eq-mZ9">
+                            <items>
+                                <group width="1" height="50" alignment="left" id="ON9-Fz-Fjv">
+                                    <items>
+                                        <button alignment="left" id="bWY-ay-865">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="gVC-eY-vdG">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" image="phone-1" contentMode="scaleAspectFill" id="mkl-Lm-6wW"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <action selector="phoneCall" destination="LaK-Cg-gdC" id="5Uw-S2-xX1"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="Avv-Ky-qJB">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="DtT-sB-T9F">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" image="mobile-1" contentMode="scaleAspectFill" id="wIp-ZX-cWb"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <action selector="mobileCall" destination="LaK-Cg-gdC" id="0i9-bD-fMj"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="50" alignment="left" id="5VS-E1-XGX">
+                                    <items>
+                                        <button alignment="left" id="emf-i8-2cR">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="0B3-p6-BJG">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" image="email" contentMode="scaleAspectFill" id="CGl-v7-REU"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <action selector="email" destination="LaK-Cg-gdC" id="lwT-mx-fKJ"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="FFT-fq-vsR">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="Vhl-mw-nW7">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" image="sms-1" contentMode="scaleAspectFill" id="FMs-jI-zU9"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <action selector="sms" destination="LaK-Cg-gdC" id="8it-kU-9xw"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="correspondentLabel" destination="0Tm-oe-zMR" id="xpa-Dj-IJW"/>
+                        <outlet property="emailButton" destination="emf-i8-2cR" id="FZy-jJ-nzb"/>
+                        <outlet property="emailImage" destination="CGl-v7-REU" id="u3Z-54-8LP"/>
+                        <outlet property="enterpriseLabel" destination="NSD-67-XEM" id="eQb-iL-nMa"/>
+                        <outlet property="mobileButton" destination="Avv-Ky-qJB" id="BpJ-bK-8bE"/>
+                        <outlet property="mobileImage" destination="wIp-ZX-cWb" id="IQg-Jb-YAs"/>
+                        <outlet property="phoneButton" destination="bWY-ay-865" id="1nJ-9o-TkZ"/>
+                        <outlet property="phoneImage" destination="mkl-Lm-6wW" id="12P-9v-ark"/>
+                        <outlet property="smsButton" destination="FFT-fq-vsR" id="Yla-bi-cbA"/>
+                        <outlet property="smsImage" destination="FMs-jI-zU9" id="8Az-hd-JEB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="660" y="354.5"/>
+        </scene>
+        <!--< Place-->
+        <scene sceneID="xrM-1m-3n6">
+            <objects>
+                <controller title="&lt; Place" id="UdT-CI-cTH" customClass="PlaceController" customModule="E_DEAL__WATCH_Extension">
+                    <items>
+                        <map width="1" height="1" alignment="left" id="5Nn-VL-WZ4"/>
+                    </items>
+                    <connections>
+                        <outlet property="placeMap" destination="5Nn-VL-WZ4" id="nzj-uA-gXf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="660" y="125"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,99 @@
+#loginScreen {
+	background: #2f487e;
+}
+
+#loginScreen  .x-layout-card-item {
+	background-color: transparent;
+}
+
+#loginScreen .header {
+	padding: 2.96875em 0;
+	background: white;
+}
+
+#loginScreen .header .logo {
+	width: 100%;
+}
+
+#loginScreen .header .logo .icon {
+	background: url(../images/login/logo.png) no-repeat center;
+	background-size: 9.28125em 1.5625em;
+	height: 1.5625em;
+}
+
+#loginScreen .header .title {
+	width: 100%;
+	text-align: center;
+}
+
+#loginScreen .header .title .name {
+	text-transform: capitalize;
+}
+
+#loginScreen .content {
+	padding-top: 5.1875em;
+	color: white;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+}
+
+#loginScreen .changeBase .info.x-button {
+	color: white;
+	background: url(../images/login/check_background.png) no-repeat center right;
+	background-size: 1.3125em 1.3125em;
+	padding-right: 1.71875em;
+	margin-bottom: 0.9375em;
+	margin-top: -0.15625em;
+	padding-left: 0;
+}
+
+
+#loginScreen .footer {
+	text-align: center;
+	color: white;
+}
+#loginScreen .version  {
+	padding-bottom: 2.1875em;
+}
+#loginScreen .version .x-innerhtml {
+	font-size: 0.84375em;
+}
+
+#loginScreen .actions {
+	text-align: center;
+	margin-top: 0.90625em;
+}
+
+#loginForm.disabled .form,
+#loginForm.disabled .actions {
+	opacity: 0.5;
+}
+
+#loginScreen .changeBase {
+}
+#loginScreen .changeBaseIntro {
+	text-align: center;
+}
+
+#loginScreen .explaination {
+	margin-left: 1em;
+	margin-right: 1em;
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+#changeBaseForm .x-button.remove {
+	font-size: 0.8em;	
+}
+
+#loginScreen .content #changeBaseForm .x-field.x-field-select {
+	margin-bottom: 0;
+}
+
+#changeBaseForm .actions.remove {
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+
+
+
